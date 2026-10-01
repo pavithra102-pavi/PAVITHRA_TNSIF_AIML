@@ -1,0 +1,24 @@
+STEPS
+- Column names converted to snake_case
+
+COUNTS
+{
+  "placeholder_text_to_missing": 0,
+  "text_columns_converted_to_numeric": [],
+  "duplicate_rows_removed": 0,
+  "duplicate_ids_removed": 0,
+  "category_labels_standardised": 0,
+  "invalid_values_set_to_missing": {},
+  "columns_dropped_over_50pct_missing": [],
+  "missing_values_filled": {},
+  "rows_before": 30,
+  "rows_after": 30
+}
+
+OUTLIERS (IQR rule, kept in cleaned file, capped in clustering-ready file)
+                          lower_fence  upper_fence  outliers  outlier_%
+feature                                                                
+listening_hours_per_week       -21.38        51.62         0        0.0
+songs_per_day                  -84.38       200.62         0        0.0
+skip_rate                      -35.62        93.38         0        0.0
+playlist_count                 -19.75        46.25         0        0.0

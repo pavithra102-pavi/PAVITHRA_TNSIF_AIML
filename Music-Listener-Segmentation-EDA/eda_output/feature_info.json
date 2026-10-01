@@ -1,0 +1,12 @@
+{
+  "capped": [],
+  "log_transformed": [],
+  "one_hot": [],
+  "dropped": [],
+  "features": [
+    "listening_hours_per_week",
+    "songs_per_day",
+    "skip_rate",
+    "playlist_count"
+  ]
+}

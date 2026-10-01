@@ -1,0 +1,25 @@
+Rows: 30   Columns: 4
+
+COLUMN TYPES / MISSING / UNIQUE
+                          dtype  missing  missing_%  unique
+listening_hours_per_week  int64        0        0.0      24
+songs_per_day             int64        0        0.0      29
+skip_rate                 int64        0        0.0      22
+playlist_count            int64        0        0.0      20
+
+Fully duplicated rows: 0
+
+FIRST 5 ROWS
+   listening_hours_per_week  songs_per_day  skip_rate  playlist_count
+0                         2             10         55               2
+1                         3             15         50               3
+2                         4             20         60               4
+3                         5             18         45               3
+4                         6             22         50               5
+
+NUMERIC SUMMARY
+                          count   mean    std   min    25%   50%    75%    max
+listening_hours_per_week   30.0  15.17  10.80   2.0   6.00  12.5  24.25   38.0
+songs_per_day              30.0  60.43  42.91  10.0  22.50  49.0  93.75  145.0
+skip_rate                  30.0  29.47  18.50   3.0  12.75  29.0  45.00   65.0
+playlist_count             30.0  14.97  10.77   2.0   5.00  14.5  21.50   40.0

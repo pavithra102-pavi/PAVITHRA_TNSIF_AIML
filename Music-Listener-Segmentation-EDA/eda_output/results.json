@@ -1,0 +1,197 @@
+{
+  "rows": 30,
+  "features": [
+    "listening_hours_per_week",
+    "songs_per_day",
+    "skip_rate",
+    "playlist_count"
+  ],
+  "describe": [
+    {
+      "feature": "listening_hours_per_week",
+      "count": 30.0,
+      "mean": 15.167,
+      "std": 10.796,
+      "min": 2.0,
+      "25%": 6.0,
+      "50%": 12.5,
+      "75%": 24.25,
+      "max": 38.0
+    },
+    {
+      "feature": "songs_per_day",
+      "count": 30.0,
+      "mean": 60.433,
+      "std": 42.906,
+      "min": 10.0,
+      "25%": 22.5,
+      "50%": 49.0,
+      "75%": 93.75,
+      "max": 145.0
+    },
+    {
+      "feature": "skip_rate",
+      "count": 30.0,
+      "mean": 29.467,
+      "std": 18.504,
+      "min": 3.0,
+      "25%": 12.75,
+      "50%": 29.0,
+      "75%": 45.0,
+      "max": 65.0
+    },
+    {
+      "feature": "playlist_count",
+      "count": 30.0,
+      "mean": 14.967,
+      "std": 10.765,
+      "min": 2.0,
+      "25%": 5.0,
+      "50%": 14.5,
+      "75%": 21.5,
+      "max": 40.0
+    }
+  ],
+  "skew": {
+    "listening_hours_per_week": 0.638,
+    "songs_per_day": 0.623,
+    "skip_rate": 0.238,
+    "playlist_count": 0.62
+  },
+  "corr": {
+    "listening_hours_per_week": {
+      "listening_hours_per_week": 1.0,
+      "songs_per_day": 0.998,
+      "skip_rate": -0.934,
+      "playlist_count": 0.972
+    },
+    "songs_per_day": {
+      "listening_hours_per_week": 0.998,
+      "songs_per_day": 1.0,
+      "skip_rate": -0.933,
+      "playlist_count": 0.971
+    },
+    "skip_rate": {
+      "listening_hours_per_week": -0.934,
+      "songs_per_day": -0.933,
+      "skip_rate": 1.0,
+      "playlist_count": -0.924
+    },
+    "playlist_count": {
+      "listening_hours_per_week": 0.972,
+      "songs_per_day": 0.971,
+      "skip_rate": -0.924,
+      "playlist_count": 1.0
+    }
+  },
+  "outliers": [
+    {
+      "feature": "listening_hours_per_week",
+      "lower_fence": -21.38,
+      "upper_fence": 51.62,
+      "outliers": 0,
+      "outlier_%": 0.0
+    },
+    {
+      "feature": "songs_per_day",
+      "lower_fence": -84.38,
+      "upper_fence": 200.62,
+      "outliers": 0,
+      "outlier_%": 0.0
+    },
+    {
+      "feature": "skip_rate",
+      "lower_fence": -35.62,
+      "upper_fence": 93.38,
+      "outliers": 0,
+      "outlier_%": 0.0
+    },
+    {
+      "feature": "playlist_count",
+      "lower_fence": -19.75,
+      "upper_fence": 46.25,
+      "outliers": 0,
+      "outlier_%": 0.0
+    }
+  ],
+  "cleaning": {
+    "placeholder_text_to_missing": 0,
+    "text_columns_converted_to_numeric": [],
+    "duplicate_rows_removed": 0,
+    "duplicate_ids_removed": 0,
+    "category_labels_standardised": 0,
+    "invalid_values_set_to_missing": {},
+    "columns_dropped_over_50pct_missing": [],
+    "missing_values_filled": {},
+    "rows_before": 30,
+    "rows_after": 30
+  },
+  "prep": {
+    "capped": [],
+    "log_transformed": [],
+    "one_hot": [],
+    "dropped": [],
+    "features": [
+      "listening_hours_per_week",
+      "songs_per_day",
+      "skip_rate",
+      "playlist_count"
+    ]
+  },
+  "clustering_preview": {
+    "components_for_80pct": 1,
+    "pc1_pc2_variance": 99.0,
+    "best_k_by_silhouette": 2,
+    "best_silhouette": 0.578,
+    "silhouettes": {
+      "2": 0.578,
+      "3": 0.553,
+      "4": 0.529,
+      "5": 0.481,
+      "6": 0.477,
+      "7": 0.442,
+      "8": 0.434,
+      "9": 0.429,
+      "10": 0.412
+    }
+  },
+  "cluster_preview": {
+    "k": 3,
+    "table": [
+      {
+        "segment": "Casual Listener",
+        "listeners": 11,
+        "share_%": 36.7,
+        "listening_hours_per_week": 4.82,
+        "songs_per_day": 19.09,
+        "skip_rate": 49.82,
+        "playlist_count": 4.09
+      },
+      {
+        "segment": "Music Explorer",
+        "listeners": 11,
+        "share_%": 36.7,
+        "listening_hours_per_week": 14.45,
+        "songs_per_day": 58.0,
+        "skip_rate": 24.91,
+        "playlist_count": 15.64
+      },
+      {
+        "segment": "Heavy Listener",
+        "listeners": 8,
+        "share_%": 26.7,
+        "listening_hours_per_week": 30.38,
+        "songs_per_day": 120.62,
+        "skip_rate": 7.75,
+        "playlist_count": 29.0
+      }
+    ],
+    "pc1_variance": 96.7,
+    "pc1_loadings": {
+      "listening_hours_per_week": 0.505,
+      "songs_per_day": 0.505,
+      "skip_rate": -0.49,
+      "playlist_count": 0.5
+    }
+  }
+}
